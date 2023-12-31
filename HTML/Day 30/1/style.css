@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    font-size: 7em;
+}
+
+td, th{
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+
+
+.cyangray {
+    background-color: #a1b4d1;
+}
+
+.lime {
+    background-color: lime;
+    color: white;
+}
+
+.green {
+    background-color: greenyellow;
+    color: white;
+}
+
+.yellowbrown {
+    background-color: rgb(205, 200, 50);
+    color: white;
+}
+
+.orange {
+    background-color: orangered;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}

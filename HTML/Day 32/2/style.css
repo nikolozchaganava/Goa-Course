@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10em;
+    background-color: #F3EAE3;
+}
+
+p{
+    color: gray;
+}
+
+.text .button{
+    margin-right: 40em;
+    margin-top: -1em;
+    background-color: #3D8168;
+    text-align: center;
+    border: none;
+    width: 13.5em;
+    height: 2.7em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+
+.box{
+    border: 1px solid black;
+    width: 43em;
+    height: 30em;
+    background-color: white;
+    margin-left: 30em;
+    border: none;
+    border-radius: 10px;
+}
+
+img{
+    width: 20em;
+    margin-right: 70em;
+    margin-left: 30em;
+    margin-top: -30em;
+    margin-bottom: 30em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text{
+    margin-left: 50em;
+    margin-right: 33em;
+    margin-top: -60em;
+    padding-left: 3em;
+}
+
+
+.text h1{
+    margin-right: 2.5em;
+    font-size: 2.2em;
+    word-spacing: 3px;
+}
+
+.text #text{
+    padding-right: 2em;
+}
+
+#perfume{
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5em;
+    margin-top: -2em;
+}
+
+.prices h4{
+    font-size: 2em;
+    color: #3D8168;
+    font-family: 'Fraunces', serif;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+    cursor: grab;
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: #23694f;
+}

@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=IM+Fell+English&family=Montserrat:wght@300&family=Noto+Serif+Georgian:wght@400;700&family=Roboto+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=IM+Fell+English&family=Montserrat:wght@300&family=Noto+Serif+Georgian:wght@400;700&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+h1{
+    font-size: 4em;
+    color:darkgreen;
+    border-color: black;
+    font-family:Montserrat;
+}
+.Paragraph{
+    font-size: 155%;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.Headings{
+    font-size: 40px;
+    text-align: center;
+}
+
+.Geo-Paragraph{
+    font-size: 25px;
+    font-family: Noto Serif Georgian;
+    text-align: center;
+}
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: dotted;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+body{
+    background-image: url();
+}

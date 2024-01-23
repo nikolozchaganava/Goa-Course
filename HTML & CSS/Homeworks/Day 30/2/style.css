@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Montserrat:wght@200&family=Noto+Sans:wght@200&family=Oswald:wght@300&family=Roboto+Slab:wght@200;300&family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 7px solid gold;
+    text-align: center;
+    width: 60%;
+}
+
+th, td {
+    border: 7px solid gold
+}
+
+caption {
+    background-color: gold;
+    font-weight: bold;
+}
+
+.th {
+    color: white;
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(140, 205, 50);
+}
+
+h1 {
+    color:orangered
+}

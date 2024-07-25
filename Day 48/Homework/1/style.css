@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,900;1,900&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 7em 10em 7em 10em;
+    font-family: "League Spartan", sans-serif;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content{
+    margin-left: 5em;
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 4em;
+    width: 7em;
+}
+
+h3{
+    color: hsl(303, 10%, 53%);
+    font-size: 20px;
+    font-weight: 500;
+    width: 25em;
+}
+
+.boxes{
+    margin-left: 44em;
+    margin-top: -10em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-1{
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    width: 25em;
+    border-radius: 10px;
+    background: hsla(333, 80%, 67%, 0.1);
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.boxes p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700
+}
+
+.box-1 svg{
+    display: flex;
+    width: 1.5em;
+}
+
+#first-box{
+    position: relative;
+    right: 2em;
+}
+
+#third-box{
+    position: relative;
+    left: 2em;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box{
+    width: 400px;
+    background: hsl(300, 43%, 22%);
+    color: whitesmoke;
+    padding: 40px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.boxes-2{
+    display: flex;
+    flex-direction: row;
+    height: 15em;
+    gap: 40px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-texts{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    font-weight: 400;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.box p{
+    position: relative;
+    top: 40px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+h4{
+    font-size: 18px;
+    color: hsl(333, 80%, 67%);
+}
+
+.box:nth-of-type(2){
+    position: relative;
+    top: 20px;
+}
+
+.box:nth-of-type(3){
+    position: relative;
+    top: 40px;
+}
+
+@media only screen and (width: 800px){
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .boxes-2{
+        display: flex;
+        flex-direction: column;
+    }
+}

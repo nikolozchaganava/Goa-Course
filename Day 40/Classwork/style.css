@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: bolder;
+    height: 100vh;
+    display: grid;
+}
+
+.container{
+    display: grid;
+
+    grid-template-areas: 
+    'aside header sect1'
+    'aside sect2 nav'
+    'aside sect4 nav'
+    ;
+}
+
+header{
+    grid-area: 'header';
+}
+
+aside{
+    grid-area: aside;
+}
+
+.sect-1{
+    grid-area: sect1;
+}
+
+.sect-2{
+    grid-area: sect2;
+}
+
+.sect-3{
+    grid-area: sect3;
+}
+
+.sect-4{
+    grid-area: sect4;
+}
+
+.sect-5{
+    grid-area: sect5;
+}
+
+nav{
+    grid-area: nav;
+}
+
+header,
+nav,
+aside,
+.sect-1,
+.sect-2,
+.sect-3,
+.sect-4,
+.sect-5{
+    border: 1px solid black;
+    padding: 20px;
+}

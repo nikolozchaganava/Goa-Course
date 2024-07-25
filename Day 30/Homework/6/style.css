@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Montserrat:wght@200&family=Noto+Sans:wght@200&family=Oswald:wght@300&family=Roboto+Slab:wght@200;300&family=Roboto:wght@100;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Montserrat:wght@100;200&family=Noto+Sans:wght@200&family=Oswald:wght@300&family=Roboto+Slab:wght@200;300&family=Roboto:wght@100;500&display=swap');
+
+body{
+    background: linear-gradient(to right, rgb(236, 153, 218), rgb(194, 53, 216));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+td, th, table {
+    border-collapse: collapse;
+    border: 2px solid rgba(0, 0, 0, 0.278);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35vh;
+    width: 100vh;
+    height: 5vh;
+}
+
+th{
+    background-color: rgb(193, 16, 206);
+    color: white;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(230, 228, 228);
+}
+
+table tr:nth-child(odd){
+    background-color: white;
+}
+
+table {
+    box-shadow: 10px 10px 25px #000000;
+}
+
+td {
+    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}

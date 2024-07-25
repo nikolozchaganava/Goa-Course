@@ -1,0 +1,12 @@
+*{
+    overflow: hidden;
+}
+
+body{
+    background-image: url(/images/blured.png);
+}
+
+img{
+    margin-left: 35em;
+    margin-top: 9em;
+}

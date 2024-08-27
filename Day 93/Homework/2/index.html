@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოძრავი ანიმაცია</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            min-height: 100svh;
+            margin: 0;
+            padding: 0;
+            background-color: springgreen;
+        }
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(0, 221, 81);
+            padding: 0;
+            position: relative;
+            border-radius: 50px;
+        }
+        #circle {
+            width: 75px;
+            height: 75px;
+            border: 5px solid rgb(0, 115, 192);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="circle"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            const box = document.getElementById('circle');
+            let pos = 0;
+            let posY = 0;
+            let scale = 1;
+            let growing = true;
+
+            let t = setInterval(move, 10);
+
+            function move() {
+                if (pos < 315 && posY === 0) {
+                    pos++;
+                    box.style.left = pos + 'px';
+                } else if (posY < 315 && pos === 315) {
+                    posY++;
+                    box.style.top = posY + 'px';
+                } else if (pos > 0 && posY === 315) {
+                    pos--;
+                    box.style.left = pos + 'px';
+                } else if (posY > 0 && pos === 0) {
+                    posY--;
+                    box.style.top = posY + 'px';
+                }
+
+                //The animation starts
+                if (growing) {
+                    scale += 0.01;
+                    if (scale >= 1.2) {
+                        growing = false;
+                    }
+                } else {
+                    scale -= 0.01;
+                    if (scale <= 1) {
+                        growing = true;
+                    }
+                }
+
+                box.style.transform = `scale(${scale})`;
+            }
+        };
+    </script>
+</body>
+</html>

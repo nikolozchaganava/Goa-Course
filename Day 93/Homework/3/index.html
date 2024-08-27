@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Right Edge Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: relative;
+            border-radius: 10px;
+            border: 5px outset mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box"></div>
+
+<script>
+    const box = document.getElementById('box');
+    let position = 0;
+    let speed = 5;
+    let scale = 1;
+    let growing = true;
+
+    function animate() {
+        position += speed;
+
+        const boxWidth = box.offsetWidth;
+        const windowWidth = window.innerWidth;
+
+        if (position + boxWidth >= windowWidth) {
+            speed = -5;
+        }
+
+        if (position <= 0) {
+            speed = 5;
+        }
+
+        box.style.left = position + 'px';
+
+        pulse();
+
+        requestAnimationFrame(animate);
+    }
+
+    function pulse() {
+        if (growing) {
+            scale += 0.01;
+            if (scale >= 1.2) {
+                growing = false;
+            }
+        } else {
+            scale -= 0.01;
+            if (scale <= 1) {
+                growing = true;
+            }
+        }
+        box.style.transform = `scale(${scale})`;
+    }
+
+    animate();
+</script>
+
+</body>
+</html>

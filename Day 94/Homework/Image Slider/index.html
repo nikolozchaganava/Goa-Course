@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <div class="slide-number">1 / 4</div>
+            <img src="https://i.pinimg.com/originals/ec/4e/44/ec4e449c51db47cb54f3996f6dc0a245.jpg" style="width:100%">
+        </div>
+        
+        <div class="slide fade">
+            <div class="slide-number">2 / 4</div>
+            <img src="https://i.pinimg.com/originals/12/56/2a/12562a05ac848700730d6ef73186b80c.jpg" style="width:100%">
+        </div>
+        
+        <div class="slide fade">
+            <div class="slide-number">3 / 4</div>
+            <img src="https://images.hdqwalls.com/wallpapers/just-me-music-and-the-road-52.jpg" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+            <div class="slide-number">4 / 4</div>
+            <img src="https://image.lexica.art/md2_webp/6127089c-13f5-4447-92e7-bb968b73f7c6" style="width:100%">
+        </div>
+    
+        <a class="arrow arrow-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="arrow arrow-next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div class="dot-container">
+        <span class="dot dot-active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

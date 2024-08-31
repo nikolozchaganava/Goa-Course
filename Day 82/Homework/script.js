@@ -57,6 +57,8 @@ function updateDisplay() {
     }
 }
 
+updateDisplay()
+
 // Making a fucntion that after clicking the confirm button it says "items purchesed"
 
 confirmBtn.onclick = function() {

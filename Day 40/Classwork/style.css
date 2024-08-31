@@ -7,59 +7,60 @@
 body{
     font-weight: bolder;
     height: 100vh;
-    display: grid;
-}
+    min-width: 100%;
 
-.container{
     display: grid;
-
+    
     grid-template-areas: 
-    'aside header sect1'
-    'aside sect2 nav'
-    'aside sect4 nav'
+    'aside header header sect1'
+    'aside sect2 sect3 nav'
+    'aside sect4 sect5 nav'
     ;
+
+    gap: 10px;
 }
 
 header{
-    grid-area: 'header';
+    grid-area: header;
+    background-color: red;
 }
 
 aside{
     grid-area: aside;
+    background-color: lime;
 }
 
 .sect-1{
     grid-area: sect1;
+    background-color: blue;
 }
 
 .sect-2{
     grid-area: sect2;
+    background-color: tomato;
 }
 
 .sect-3{
     grid-area: sect3;
+    background-color: violet ;
 }
 
 .sect-4{
     grid-area: sect4;
+    background-color: violet;
 }
 
 .sect-5{
     grid-area: sect5;
+    background-color: tomato;
 }
 
 nav{
     grid-area: nav;
+    background-color: aqua;
 }
 
-header,
-nav,
-aside,
-.sect-1,
-.sect-2,
-.sect-3,
-.sect-4,
-.sect-5{
+body > * {
     border: 1px solid black;
     padding: 20px;
 }

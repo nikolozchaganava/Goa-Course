@@ -1,23 +1,21 @@
-function selectMortgageType(selectedCheckbox) {
-    var checkboxes = document.querySelectorAll('input[name="mortgage-type"]');
-    checkboxes.forEach(function(checkbox) {
+const selectMortgageType = selectedCheckbox => {
+    document.querySelectorAll('input[name="mortgage-type"]').forEach(checkbox => {
         if (checkbox !== selectedCheckbox) {
             checkbox.checked = false;
         }
     });
-}
+};
 
-function calculateMortgage() {
-    var loanAmount = parseFloat(document.getElementById('amount').value);
-    var interestRate = parseFloat(document.getElementById('interest-rate').value) / 100 / 12;
-    var loanTerm = parseInt(document.getElementById('term').value) * 12;
-    var mortgageType = document.querySelector('input[name="mortgage-type"]:checked').value;
+const calculateMortgage = () => {
+    const loanAmount = parseFloat(document.getElementById('amount').value);
+    const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100 / 12;
+    const loanTerm = parseInt(document.getElementById('term').value) * 12;
+    const mortgageType = document.querySelector('input[name="mortgage-type"]:checked').value;
 
-    var monthlyPayment;
-    var totalRepayment;
+    let monthlyPayment, totalRepayment;
 
     if (mortgageType === 'repayment') {
-        var x = Math.pow(1 + interestRate, loanTerm);
+        const x = Math.pow(1 + interestRate, loanTerm);
         monthlyPayment = (loanAmount * x * interestRate) / (x - 1);
         totalRepayment = monthlyPayment * loanTerm;
     } else if (mortgageType === 'interest-only') {
@@ -29,16 +27,11 @@ function calculateMortgage() {
     document.getElementById('repay').textContent = formatNumber(totalRepayment);
 
     return false;
-}
+};
 
-function formatNumber(number) {
-    return Math.round(number * 100) / 100;
-}
+const formatNumber = number => Math.round(number * 100) / 100;
 
-function showResults(){
-    let results = document.getElementById('results');
-    results.style.display = 'block';
-
-    let empty = document.getElementById('empty');
-    empty.style.display = 'none'
-}
+const showResults = () => {
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('empty').style.display = 'none';
+};

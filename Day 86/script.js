@@ -1,4 +1,4 @@
-var data = {
+let data = {
     daily: [
       { title: "Work", current: "5hrs", previous: "Last Day - 7hrs" },
       { title: "Play", current: "1hr", previous: "Last Day - 2hrs" },
@@ -26,13 +26,13 @@ var data = {
   };
   
   function updateDashboard(timeframe) {
-    var cards = document.querySelectorAll('.card');
-    var timeframeData = data[timeframe];
+    let cards = document.querySelectorAll('.card');
+    let timeframeData = data[timeframe];
   
-    for (var i = 0; i < cards.length; i++) {
-      var card = cards[i];
-      var currentTitle = card.querySelector('h2').innerText;
-      for (var j = 0; j < timeframeData.length; j++) {
+    for (let i = 0; i < cards.length; i++) {
+      let card = cards[i];
+      let currentTitle = card.querySelector('h2').innerText;
+      for (let j = 0; j < timeframeData.length; j++) {
         if (timeframeData[j].title === currentTitle) {
           card.querySelector('.current').innerText = timeframeData[j].current;
           card.querySelector('.previous').innerText = timeframeData[j].previous;
@@ -41,10 +41,10 @@ var data = {
     }
   }
   
-  var buttons = document.querySelectorAll('.timeframe-buttons button');
-  for (var i = 0; i < buttons.length; i++) {
+  let buttons = document.querySelectorAll('.timeframe-buttons button');
+  for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
-      for (var j = 0; j < buttons.length; j++) {
+      for (let j = 0; j < buttons.length; j++) {
         buttons[j].classList.remove('active');
       }
       this.classList.add('active');

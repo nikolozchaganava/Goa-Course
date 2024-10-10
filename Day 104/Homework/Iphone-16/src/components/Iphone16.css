@@ -1,0 +1,21 @@
+:root {
+    --navigation-bar: #999999;
+    --side-button: #9a9a9a;
+    --phone-base-color: #808080;
+}
+
+.phone-back {
+    background-color: var(--phone-base-color);
+    width: 24rem;
+    height: 42rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.phone-display {
+    background-color: var(--phone-base-color);
+    width: 24rem;
+    height: 42rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}

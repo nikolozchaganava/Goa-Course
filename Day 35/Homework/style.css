@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: #E14F08;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 10px;
+    font-size: 3em;
+    animation-name: h1-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    position: relative;
+    top: 2.5em;
+}
+
+@keyframes h1-animation{
+    0%{
+        position: relative;
+        top: 0px;
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.button:hover{
+    border-radius: 10px;
+    color: white;
+    width: 2em;
+}
+
+p{
+    font-size: 1.5em;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 10em;
+    padding: 0px 50px;
+    animation-name: p-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes p-animation{
+    0%{
+        opacity: 0;
+        margin-left: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.button{
+    font-size: 1.5em;
+    margin-top: 2em;
+    border: 2px solid white;
+    background-color: gray;
+    text-decoration: none;
+    animation-name: button-animation;
+}
+
+

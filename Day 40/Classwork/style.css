@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: bolder;
+    height: 100vh;
+    min-width: 100%;
+
+    display: grid;
+    
+    grid-template-areas: 
+    'aside header header sect1'
+    'aside sect2 sect3 nav'
+    'aside sect4 sect5 nav'
+    ;
+
+    gap: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: red;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lime;
+}
+
+.sect-1{
+    grid-area: sect1;
+    background-color: blue;
+}
+
+.sect-2{
+    grid-area: sect2;
+    background-color: tomato;
+}
+
+.sect-3{
+    grid-area: sect3;
+    background-color: violet ;
+}
+
+.sect-4{
+    grid-area: sect4;
+    background-color: violet;
+}
+
+.sect-5{
+    grid-area: sect5;
+    background-color: tomato;
+}
+
+nav{
+    grid-area: nav;
+    background-color: aqua;
+}
+
+body > * {
+    border: 1px solid black;
+    padding: 20px;
+}

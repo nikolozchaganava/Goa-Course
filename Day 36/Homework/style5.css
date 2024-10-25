@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(phots/programming.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+header{
+    background-color: rgba(131, 176, 144, 0.334);
+    display: flex;
+    z-index: 1;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -40px;
+    color: rgba(255, 255, 255, 0.798);
+}
+
+.heading:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#picture{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+
+    animation-name: picture-animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes picture-animation{
+    0%{
+        transform: translateX(-3em);
+    }
+    100%{
+
+    }
+}
+
+h1{
+    animation-name: text-animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes text-animation{
+    0%{
+        transform: translateY(-3em);
+    }
+    100%{
+
+    }
+}
+
+#picture:hover{
+    cursor: pointer;
+}
+
+.right-side{
+    float: right;
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+#contact{
+    animation-name: contact-us;
+    animation-duration: 1s;
+}
+
+@keyframes contact-us{
+    0%{
+        transform: translateY(-1em);
+    }
+}
+
+#teacher{
+    animation-name: teacher;
+    animation-duration: 2s;
+}
+
+@keyframes teacher{
+    0%{
+        transform: translateY(-1em);
+    }
+}
+
+.right{
+    display: flex;
+    gap: 2em;
+    float: right;
+    flex-direction: row-reverse;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.right-side:hover{
+    color: rgb(30, 140, 30);
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 30px;
+    border: none;
+    background-size: 200% auto;
+    color: #ffffff;
+    width: 4.5em;
+    padding-top: 2px;
+    height: 1.4em;
+    margin-top: 1.6em;
+    font-size: 1.3em;
+    
+    animation-name: button;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: 0.5s;
+}
+
+
+
+@keyframes button{
+    0%{
+        background-image: linear-gradient(
+        to left,
+        rgb(0, 255, 100) 0%,
+        rgb(40, 215, 205) 50%,
+        rgb(20, 235, 80) 50%,
+        rgb(40, 195, 185) 100%);
+    }
+    100%{
+        background-image: linear-gradient(
+        to right,
+        rgb(0, 255, 100) 0%,
+        rgb(40, 215, 205) 50%,
+        rgb(20, 235, 80) 50%,
+        rgb(40, 195, 185) 100%
+        );
+    }
+}
+
+.button:hover{
+    animation-name: button-hover;
+    animation-duration: 1s;
+    transition: 0.5s;
+
+    background-position: right;
+    outline: none;
+    outline: none;
+    transition: .5s;
+}
+
+@keyframes button-hover{
+    0%{
+        background-image: linear-gradient(
+        to right,
+        #ffbc5b 0%,
+        #ff5645 50%,
+        #f7213d 50%,
+        #dd07b7 100%
+      );
+    }
+    100%{
+        background-image: linear-gradient(
+        to left,
+        #ffbc5b 0%,
+        #ff5645 50%,
+        #f7213d 50%,
+        #dd07b7 100%
+      );
+    }
+}
+
+
+#myVideo {
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main{
+    position: fixed;
+    display: flex;
+    z-index: 2;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: end;
+    animation-duration: 3s;
+}
+
+#picture-2{
+    width: 25em;
+    border-radius: 50%;
+    height: 25em;
+
+    position: relative;
+    left: 40em;
+    top: 15em;
+    opacity: 0;
+
+    animation-name: autro;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    transition: .5s;
+}
+
+@keyframes autro{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }   
+
+    75%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+#main-page{
+    opacity: 0;
+    border: 1px solid white;
+    width: 15em;
+    height: 2em;
+    border-radius: 7px;
+    background: url(photos/programming1.jpg);
+    font-weight: 800;
+    font-size: 3em; 
+    color: white;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 1.7em;
+    margin-top: 8em;
+
+    box-shadow: 10px 10px 10px white;
+
+    animation-name: button-animation;
+    animation-duration: 60s;
+    animation-delay: 5s;
+    animation-timing-function: ease;
+}
+
+@keyframes button-animation{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(15em);
+    }
+}
+
+#main-page:hover{
+    cursor: pointer;
+    background: url(photos/programming2.jpg);
+    background-position: center;
+}
+
+form{
+    margin-right: 5em;
+    margin-top: 2em;
+}
+
+input[type="text"] {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 8px;
+    border-radius: 4px;
+    width: 25em;
+    height: 3em;
+
+    animation-name: type;
+    animation-duration: 2s;
+}
+
+@keyframes type{
+    0%{
+        opacity: 0;
+        transform: translateX(-1.5em);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input[type="submit"] {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    height: 3em;
+
+    animation-name: search;
+    animation-duration: 2s;
+}
+
+@keyframes search{
+    0%{
+        opacity: 0;
+        transform: translateX(1.5em);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input[type="submit"]:hover {
+    background-color: #090;
+}

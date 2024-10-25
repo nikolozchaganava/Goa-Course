@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Montserrat:wght@300&family=Poppins:wght@900&display=swap');
+
+body{
+    background-color: black;
+    font-family: 'Gamja Flower', sans-serif;
+    color: rgb(0,255,255);
+    text-transform: capitalize;
+}
+
+.big-box{
+    border: 3px solid rgb(0,255,255);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 31em;
+    margin-right: 31em;
+    margin-top: 3em;
+    height: 40em;
+    padding-left: 5em;
+    padding-top: 3em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    margin-top: -.5em;
+    font-size: 2.5em;
+    margin-left: 6em;
+    font-weight: 100;
+}
+
+img{
+    margin-top: -1em;
+    margin-left: 10em;
+}
+
+input{
+    display: block;
+    background: none;
+    border: 2px solid rgb(0,255,255);
+    border-radius: 20px;
+    height: 2em;
+    width: 15em;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    color: rgb(0,255,255);
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+.small-box{
+    border: 1px solid rgba(0, 255, 255, 0.500);
+    height: 19em;
+    margin-right: 5em;
+}
+
+#nickname{
+    margin-left: 5em;
+}
+
+#email{
+    margin-left: 10em;
+}
+
+#pass{
+    margin-left: 15em;
+}

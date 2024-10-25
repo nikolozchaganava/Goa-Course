@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@1,500&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,500&family=Open+Sans:ital@1&display=swap');
+
+body{
+    background-color: rgba(0, 0, 0, 0.025);
+    font-family: 'Figtree', sans-serif;
+}
+
+#h3 {
+    font-family: 'Figtree', sans-serif;
+    position: relative;
+    top: 9px;
+    left: 7px;
+    font-weight: 1000;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+#Ist-word{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgba(228, 0, 80, 0.328);
+}
+
+#logo {
+    float: left;
+    width: 42px;
+    height: auto;
+    padding-left: 8.3em;
+    padding-top: 1px;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.header-headings{
+    font-family: 'Figtree', sans-serif, 'Open Sans';
+    position: relative;
+    top: -3rem;
+    right: 10rem;
+    font-weight: 1000;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.heading-text{
+    display: inline-block;
+    position: relative;
+    color: red;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+}
+
+#first{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+#first::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+#first:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+#second{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+#second::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+#second:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+#third{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+#third::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+#third:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+#fourth{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+#fourth::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+#fourth:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+#fifth{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+#fifth::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+#fifth:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+hr{
+    position: relative;
+    top: -3rem;
+    opacity: 0.3;
+}
+
+#challenge{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 100vh;
+    position: relative;
+    bottom: 2.5rem;
+    left: 9rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+
+.table{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3vh;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.button{
+    border: 0;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-10%, -54%);  
+}
+
+#FREE{
+    background-color: rgb(231,235,249);
+    color: rgb(94,105,168);
+    text-align: center;
+    display: inline;
+    border-radius: 10px;
+    width: 3em;
+    text-align: center;
+}
+
+#HTML, #FREE, #CSS{
+    display: flex;
+    flex-direction: row;
+}
+.td-first{
+    font-size: 1.8em;
+    position: relative;
+    left: 1em;
+    top: 2em;
+    display: flex;
+    font-weight: 500;
+}
+
+#CSS{
+    position: relative;
+    left: 9em;
+    top: 2em;
+    color: rgb(45, 73, 176);
+}
+
+#HTML{
+    position: relative;
+    left: 5.5em;
+    top: 3.3em;
+    color: rgb(106,190,205);
+}
+
+#FREE{
+    position: relative;
+    left: 2em;
+    top: 4.7em;
+    text-align: center;
+}
+
+#text{
+    position: relative;
+    top: 5em;
+    left: 2em;
+    display: flex;
+    flex-wrap:  wrap;
+    color: rgb(79, 79, 79);
+    margin-right: 39em;
+    font-weight: 500;
+}
+
+.preview-img{
+    width: 35em;
+    margin-left: 53em;
+    margin-top: -30em;
+    position: relative;
+    top: 29.5em;
+    cursor: pointer;
+}
+
+#button {
+    font-size: 22px;
+    border-radius: 2em;
+    width: 15em;
+    height: 2.6em;
+    border: none;
+    color: white;
+    background-color: rgb(62,84,163);
+    font-family: 'Figtree', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    left: 15em;
+    top: 20em;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+#button:hover{
+    background-color: rgb(42,57,111);
+}
+
+.button-second{
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2em;
+    width: 10.5em;
+    height: 1.8em;
+    font-weight: 600;
+    position: relative;
+    left: 40em;
+    top: 35em;
+    cursor: pointer;
+}
+
+#button-first{
+    background-color: rgb(62,84,163);
+    color: white;
+}
+
+#button-first:hover{
+    background-color: rgb(42,57,111)
+}
+
+#button-second{
+    background-color: rgb(219,229,230);
+    color: rgb(115,115,115);
+}
+
+#button-second:hover{
+    background-color: rgb(193, 211, 216);
+}

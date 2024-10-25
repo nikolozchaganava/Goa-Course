@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Text</title>
+</head>
+<body>
+
+    <div id="textContainer"></div>
+    <button id="removeTextButton">Remove Text</button>
+    <button class="addTextButton">Add Text</button>
+
+    <script>
+        const addTextFunc = () => {
+            const textContainer = document.getElementById('textContainer');
+            const textNode = document.createTextNode('Hello world!');
+            textContainer.appendChild(textNode);
+        }
+
+        const removeButtonFunc = () => {
+            const textContainer = document.getElementById('textContainer');
+            textContainer.textContent = '';
+        };
+
+        const removeButton = document.getElementById('removeTextButton');
+        removeButton.onclick = removeButtonFunc;
+
+        const addButton = document.querySelector('.addTextButton');
+        addButton.onclick = addTextFunc;
+    </script>
+</body>
+</html>

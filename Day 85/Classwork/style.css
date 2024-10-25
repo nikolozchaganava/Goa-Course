@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    background-color: hsl(202, 86%, 94%);
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 2em;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;;
+}
+
+label {
+    color: hsl(200, 24%, 40%);
+}
+
+.content {
+    background-color: white;
+    padding: 40px;
+    padding-right: 120px;
+    height: 30em;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    color: hsl(202, 55%, 16%);
+}
+
+.mortgage-amount-div,
+.mortgage-term-div,
+.interest-rate-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#mortgage-type {
+    display: block;
+}
+
+.repayment,
+.interest-only {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 2em;
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.mortgage-term-div,
+.interest-rate-div {
+    width: 45%;
+}
+
+.calc-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mortgage-type-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.repayment label,
+.interest-only label {
+    color: hsl(202, 55%, 16%);
+    font-weight: 700;
+}
+
+.repayment input:checked,
+.interest-only input:checked {
+    background-color: hsl(61, 70%, 52%);
+}
+
+#calculate-repayments {
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    height: 2.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+    width: 70%;
+    border-radius: 30px;
+    padding-left: 20px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+#calculate-repayments::before {
+    content: url('assets/images/icon-calculator.svg');
+    position: absolute;
+    left: 25px;
+    top: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset {
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 35em;
+    top: 11.8em;
+}
+
+.results-shown-here {
+    background-color: hsl(202, 55%, 16%);
+    padding: 40px;
+    height: 30em;
+    border-bottom-left-radius: 20%;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    position: relative;
+    right: 5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#empty img {
+    width: 50%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#empty h1 {
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(203, 41%, 72%);
+}
+
+.results {
+    display: none;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#results {
+    display: none;
+}
+
+.results h2 {
+    color: white;
+}
+
+.results h1 {
+    color: hsl(61, 70%, 52%);
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.results p {
+    font-size: 1.1em;
+}
+
+.result-center {
+    background-color: hsl(201, 54%, 13%);
+    width: 100%;
+    height: 55%;
+    border-radius: 15px;
+    position: relative;
+    top: 1.5em;
+    padding: 20px;
+
+    box-shadow: 0px -5px 0px hsl(61, 70%, 52%);
+}
+
+.result-center h3 {
+    color: hsl(203, 41%, 72%);
+    font-weight: 500;
+}
+
+hr {
+    background: hsl(202, 86%, 94%);
+    position: relative;
+    top: 10px;
+}
+
+#h3 {
+    position: relative;
+    top: 30px;
+}
+
+.result-center h2 {
+    position: relative;
+    top: 40px;
+}

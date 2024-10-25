@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+    body {
+        font-family: Poppins;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(photos/programming1.jpg);
+
+        animation-name: background;
+        animation-duration: .5s;
+    }
+
+    @keyframes background{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    form {
+        background-image: linear-gradient(
+            to top,
+            #191A19,
+            #1E5128,
+            #4E9F3D
+        );
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid white;
+        box-shadow: 10px 10px 15px rgb(255, 255, 255);
+        width: 300px;
+        height: auto;
+        text-align: center;
+        color: white;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    #register{
+        position: relative;
+        right: 3em;
+    }
+
+    a:link{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:active{
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgb(rgb(195, 195, 195),);
+    }
+    
+    a:visited{
+        color: white;
+    }

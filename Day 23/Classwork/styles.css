@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Montserrat:wght@200&family=Noto+Sans:wght@200&family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(photos/Space.png);
+    width: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+p, ul, h1, h2{
+    word-spacing: 1px;
+    color:white;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    text-shadow:10px 8px 5px gray;
+    color:white
+}
+
+ul{
+    font-size: 20px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+button{
+    border-radius: 20px;
+    background-color: rgba(24, 210, 83, 0.714);
+    border:none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+.rightbtn{
+    text-align:right;
+}
+
+
+img{
+    width:3em;
+}
+
+#img2{
+    width: 5em
+}

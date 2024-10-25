@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap');
+
+.tr{
+    font-family: Noto Serif Georgian;
+}
+
+#Squad { 
+    color: rgb(255, 17, 0);
+    background-color:rgba(0, 255, 0, 0.542);
+}
+ 
+.Leaders {
+    background-color: rgba(218, 32, 32, 0.612);
+    text-align: center;
+}
+
+.Students {
+    background-color: rgba(0, 255, 255, 0.494);
+    text-align: center;
+}
+
+#Header{
+    text-align: center;
+    background-color: antiquewhite;
+}

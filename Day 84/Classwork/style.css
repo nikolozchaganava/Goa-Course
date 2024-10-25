@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 35rem
+}
+
+.front-card {
+    background-image: url(images/bg-card-front.png);
+    width: 22em;
+    height: 10.8em;
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+    position: relative;
+    right: 5em;
+}
+
+.card-number {
+    font-size: 27px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 2em;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    top: 5em;
+}
+
+.back-card {
+    background-image: url(images/bg-card-back.png);
+    width: 22em;
+    height: 10.8em;
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    gap: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 100%;
+    justify-content: center;
+}
+
+form {
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: hsl(0, 0%, 20%); 
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input:focus{ 
+    border: 1px solid hsl(249, 99%, 64%);
+    outline: none;
+}
+
+.exp-date {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.thank-you {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.thank-you button {
+    margin-top: 10px;
+    background-color: hsl(134, 61%, 41%);
+}
+
+.thank-you button:hover {
+    background-color: hsl(133, 61%, 33%);
+}
+
+#MM, #YY {
+    width: 70px;
+}
+
+#cvc {
+    width: 50%;
+}
+
+.botton-info {
+    display: flex;
+    gap: 20px;
+}
+
+.card-cvc {
+    position: relative;
+    right: 25px;
+}

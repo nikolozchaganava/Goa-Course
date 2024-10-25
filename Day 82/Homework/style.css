@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 70%;
+    padding: 20px 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navLinks a::after {
+    content: '';
+    height: 5px;
+    width: 0;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transition: width 0.2s ease;
+}
+
+.navLinks a:hover::after {
+    width: 100%;
+}
+
+.navLinks a:active::after {
+    width: 100%;
+}
+
+.cartBox {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 51em;
+    width: 15em;
+    height: 11em;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: auto;
+    font-size: 1.5em;
+    position: absolute;
+    float: right;
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+}
+
+#cartBoxMain {
+    width: 10em;
+    position: relative;
+    left: 3.2em;
+    top: 2.5em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+#cartBoxHeader {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    width: 13em;
+    font-weight: 700;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.cartBox.visible {
+    display: block;
+    transition: .5s;
+}
+
+.confirm {
+    position: absolute;
+    left: 3.5em;
+    top: 9em;
+    width: 10em;
+    height: 2.3em;
+    font-size: .9em;
+
+    border-radius: 10px;
+    border: none;
+    background: rgb(20, 255, 20);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visibleBtn {
+    display: inline-block;
+}
+
+.cartProfile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+#icon {
+    width: 42px;
+    height: 40px;
+    position: relative;
+}
+
+.profilePic {
+    width: 70px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    width: 95em;
+}
+
+.productGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainImage {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+    border-color: hsl(26, 100%, 55%);
+}
+
+.productDetails {
+    max-width: 400px;
+}
+
+.companyName {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.productDetails h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.productDescription {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-right: -5em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.currentPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.discount {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.addToCart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50em;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(223, 64%, 98%);
+    width: 7.5em;
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity button {
+    background-color: hsl(0, 0%, 87%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.addToCartBtn {
+    background-color: #ff7d1a;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 16em;
+}
+
+.addToCartBtn:hover {
+    background-color: hsl(22, 100%, 66%);
+}
+
+h1{
+    margin-right: -5em;
+}
+
+#decrease{
+    background: none;
+    color: hsl(26, 100%, 55%);
+}
+
+#increase{
+    background: none;
+    color: hsl(26, 100%, 55%);
+}
+
+#quantity{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*-------------------------------------------------------*/
+/* The responsive */
+
+@media screen and (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 90%;
+    padding: 15px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navLinks a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.2s ease;
+}
+
+.navLinks a:hover::after {
+    width: 100%;
+}
+
+.navLinks a:active::after {
+    width: 100%;
+}
+
+.cartProfile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#icon {
+    width: 32px;
+    height: 30px;
+}
+
+.profilePic {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profileBox {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    width: 14em;
+    max-width: 90%;
+    height: 8em;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: auto;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.profileBox.visible {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.productGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#mainImage {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.thumbnailContainer {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.productDetails {
+    max-width: 100%;
+    text-align: center;
+}
+
+.companyName {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.productDetails h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.productDescription {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.currentPrice {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.discount {
+    background-color: black;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.addToCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: hsl(223, 64%, 98%);
+    width: 120px;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+.quantity button {
+    background-color: hsl(0, 0%, 87%);
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.addToCartBtn {
+    background-color: hsl(26, 100%, 55%);
+    color: black;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.addToCartBtn:hover {
+    background-color: hsl(22, 100%, 66%);
+}
+
+}

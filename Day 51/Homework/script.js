@@ -1,0 +1,73 @@
+// Me and my family (with console.log)
+
+console.log("Name: Nikolozi")
+console.log("Familyname: Chaganava")
+console.log("Age: 13")
+console.log("Birth Date: 03/08/2010")
+
+console.log("Dad: Shavlegi Chaganava")
+console.log("Mom: Elene Lukava")
+console.log("Grandma: Manana dzidziguri")
+console.log("Grandpa: Murmani Lukava")
+console.log("Sister: Mariam Chaganava")
+
+// Me and my family (with alert)
+
+alert("Name: Nikolozi")
+alert("Familyname: Chaganava")
+alert("Age: 13")
+alert("Birth Date: 03/08/2010")
+alert("Dad: Shavlegi Chaganava")
+alert("Mom: Elene Lukava")
+alert("Grandma: Manana dzidziguri")
+alert("Grandpa: Murmani Lukava")
+alert("Sister: Mariam Chaganava")
+
+// Mathematic formulas
+// +
+console.log(5+5)
+console.log(10+5)
+console.log(15+5)
+console.log(20+5)
+console.log(25+5)
+console.log(30+5)
+console.log(35+5)
+console.log(40+5)
+console.log(45+5)
+console.log(50+5)
+
+// -
+console.log(5-5)
+console.log(10-5)
+console.log(15-5)
+console.log(20-5)
+console.log(25-5)
+console.log(30-5)
+console.log(35-5)
+console.log(40-5)
+console.log(45-5)
+console.log(50-5)
+
+// *
+console.log(5*5)
+console.log(10*5)
+console.log(15*5)
+console.log(20*5)
+console.log(25*5)
+console.log(30*5)
+console.log(35*5)
+console.log(40*5)
+console.log(45*5)
+console.log(50*5)
+
+/* / */
+console.log(5/5)
+console.log(10/5)
+console.log(15/5)
+console.log(20/5)
+console.log(25/5)
+console.log(30/5)
+console.log(35/5)
+console.log(40/5)
+console.log(45/5)
+console.log(50/5)

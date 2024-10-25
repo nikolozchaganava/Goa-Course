@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+body{
+    font-family: 'Kaushan Script', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #000000; 
+    background-image: url(Heaven.jpg);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ice {
+    color: rgb(155, 238, 241);
+    text-align: center;
+    outline: none;
+    stroke: #000000;
+    font-size: 90px;
+    text-shadow:
+      0 0 20px rgb(40, 230, 151),
+      0 0 20px rgb(40, 230, 151),
+      0 0 10px rgb(40, 230, 151)n,
+      5px -10px 10px rgb(173, 220, 233),
+      -5px -10px 10px rgb(129, 216, 236);
+    animation: 2s amazing infinite alternate linear;
+  }
+
+  @keyframes amazing {
+    0%   { 
+      text-shadow: 0 10px 20px rgb(20, 93, 220), 0 0 20px cyan,
+      0 0 10px  rgb(173, 220, 233),
+      0 0 10px rgb(0, 157, 255),
+      -5px -5px 5px rgb(129, 216, 236),
+      10px -10px 10px rgb(129, 216, 236); 
+    }
+    25%   { 
+      text-shadow: 0 10px 20px rgb(20, 93, 220), 0 0 20px cyan,
+      0 0 20px rgb(173, 220, 233),
+      -5px -5px 5px rgb(129, 216, 236),
+      5px -10px 10px rgb(129, 216, 236),
+      -5px -10px 10px rgb(129, 216, 236); 
+    }
+    50%   { 
+      text-shadow: 0 10px 20px rgb(20, 93, 220), 0 0 20px cyan,
+      0 0 10px rgb(173, 220, 233),
+      0 0 10px rgb(0, 157, 255),
+      -5px -5px 5px rgb(129, 216, 236),
+      10px -10px 10px rgb(129, 216, 236); 
+    }
+    75%   { 
+      text-shadow: 0 10px 20px rgb(20, 93, 220), 0 0 20px cyan,
+      0 0 20px rgb(173, 220, 233),
+      -5px -5px 5px rgb(129, 216, 236),
+      5px -10px 10px rgb(129, 216, 236),
+      -5px -10px 10px rgb(129, 216, 236); 
+    }
+    100%   { 
+      text-shadow: 0 10px 20px rgb(20, 93, 220), 0 0 20px cyan,
+      0 0 10px rgb(173, 220, 233),
+      0 0 10px rgb(0, 157, 255),
+      -5px -5px 5px rgb(129, 216, 236),
+      10px -10px 10px rgb(129, 216, 236); 
+    }
+  }
+
+#Getridof{
+    font-size: 150px;
+}
+
+  
+#ul{
+    font-size: 2.5em;
+    list-style-position: inside;
+}
+
+#h1{
+    font-size: 4em;
+}
+
+.orders{
+    font-size: 30px;
+}
+
+button{
+  size: 2em;
+  font-size: x-large;
+  border: none;
+  background-color: rgba(107, 188, 229, 0.617);
+  border-radius: 12px;
+  font-family: 'Kaushan Script', sans-serif;
+}

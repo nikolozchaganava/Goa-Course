@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="logo">Sneakers</div>
+        <ul class="navLinks">
+            <li><a href="#1">Collections</a></li>
+            <li><a href="#2">Men</a></li>
+            <li><a href="#3">Women</a></li>
+            <li><a href="#4">About</a></li>
+            <li><a href="#5">Contact</a></li>
+        </ul>
+        <div class="cartProfile">
+            <img id="icon" src="images/icon-cart.svg" alt="Cart Icon" onclick="showProfileBox('cartBox')">
+            <img class="profilePic" id="profileBtn" src="images/image-avatar.png" alt="Profile Picture">
+            <div class="cartBox" id="cartBox">
+                <p id="cartBoxHeader">Cart</p>
+                <p id="cartBoxMain">Your cart is empty.</p>
+                <button class="confirm" onclick="confirm">confirm</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="productGallery">
+            <img id="mainImage" src="images/image-product-1.jpg" alt="Product Image">
+            <div class="thumbnaiContainer">
+                <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="Product Thumbnail 1">
+                <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="Product Thumbnail 2">
+                <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="Product Thumbnail 3">
+                <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="Product Thumbnail 4">
+            </div>
+        </div>
+        <div class="productDetails">
+            <p class="companyName">Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="product-description">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="price">
+                <span class="currentPrice">$125.00</span>
+                <span class="discount">50%</span>
+                <span class="originalPrice">$250.00</span>
+            </div>
+            <div class="addToCart">
+                <div class="quantity">
+                    <button id="decrease" onclick="decrease()">-</button>
+                    <span id="quantity">0</span>
+                    <button id="increase" onclick="increase()">+</button>
+                </div>
+                <button class="addToCartBtn" onclick="showProfileBox('cartBox')">
+                  <img src="images/icon-cart-black.svg" alt="">
+                  Add to Cart
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Big Over";
+    src: url("./assets/b_biger_over/bBigerOver.otf");
+}

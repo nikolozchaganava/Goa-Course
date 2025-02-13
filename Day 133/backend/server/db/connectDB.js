@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-export default connectDB = async () => {
+export default async function connectDB() {
   try {
     const conn = await mongoose.connection(process.env.MONGODB_URI);
     console.log(`MongoDB is chilling at ${conn.connection.host}`)
